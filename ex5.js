@@ -29,3 +29,7 @@ let bancoPeces = [pez1, pez2, pez3];
  * "El pez Nemo es de color naranja"
  * "El pez Sipho es de color negro"
  */
+
+for (let i = 0; i < bancoPeces.length; i++) {
+  console.log(`El pez ${bancoPeces[i].nombre} es de color ${bancoPeces[i].color}`);
+}

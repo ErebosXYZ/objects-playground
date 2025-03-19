@@ -7,6 +7,10 @@ let estudiante = {
   conocimientos: ["Trello", "Adobe"],
 };
 
+estudiante.conocimientos.push("CSS");
+
+console.log(estudiante.conocimientos);
+
 /**
  * Alba ha aprendido hace poco a trabajar con CSS. Escribe UNA sentencia JavaScript que modifique la propiedad 'conocimientos'; y añade uno nuevo: 'CSS'
  * 
@@ -19,6 +23,6 @@ let estudiante = {
  * 
  * Pistas:
  * 
- * 1. ¿De tipo de variable es 'conocimientos'?
- * 2. ¿Cuál es el método para añadir un nuevo elemento a un array?
+ * 1. ¿De tipo de variable es 'conocimientos'? Es un array
+ * 2. ¿Cuál es el método para añadir un nuevo elemento a un array? .push()
  */
