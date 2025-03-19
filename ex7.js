@@ -10,8 +10,13 @@
  */
 
 function getOldestAge(person1, person2) {
-
+if (person1.age >= person2.age) {
+    return person1.age;
+} return person2.age;
 }
+
+// es pot utilitzar return dins l'if perquè és una funció. El return mostra per la consola el valor que li demanem i per tant no cal el console.log
+
 
 // Ejemplo de uso:
 console.log(getOldestAge({ name: "Pedro", age: 30 }, { name: "María", age: 25 })); 

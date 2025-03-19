@@ -6,7 +6,7 @@
  */
 
 function countHobbies(person) {
-
+    return person.hobbies.length;
 }
 
 // Ejemplo de uso:
