@@ -52,28 +52,28 @@ const robot = {
 // Ejemplo ya solucionado
 console.log("Muestra el nombre del robot: ", robot.nombre);
 
-console.log("Muestra el modelo del robot: ", undefined);
+console.log("Muestra el modelo del robot: ", robot.modelo);
 
-console.log("Muestra el color del robot: ", undefined);
+console.log("Muestra el color del robot: ", robot.color);
 
 console.log(
   "Calcula el peso del robot en la luna, sabiendo que el peso del robot en la luna es el 16,5% del peso del robot en la tierra: ",
-  undefined
+  robot.peso * 0.165
 );
 
 console.log(
   "Indica el nivel actual de carga de batería del robot: ",
-  undefined
+  robot.capacidadCarga
 );
 
 console.log(
   "Indica el número de herramientas de las que dispone el robot",
-  undefined
+  robot.herramientas
 );
 
 console.log(
   "Devuelve un true o un false indicando si, entre los movimientos del robot, existe la capacidad de 'volar' ",
-  undefined
+  robot.movimientos.includes("volar")
 );
 
 /**
@@ -83,3 +83,6 @@ console.log(
  * 2. Carga la batería del robot 500 unidades
  * 3. Indica al robot que relice la tarea de "caminar"
  *  */
+robot.activar();
+robot.cargarBateria(500);
+robot.realizarTarea("caminar");

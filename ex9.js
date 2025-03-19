@@ -11,7 +11,7 @@ let estudiante = {
   nombre: "Edu",
   conocimientos: [],
   aprender: function (nuevoConocimiento) {
-    // una línia de código
+    this.conocimientos.push("HTML");
   },
 };
 
